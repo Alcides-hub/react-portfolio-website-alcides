@@ -1,0 +1,327 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.container__header {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ================= Socials =============== */
+
+.header__socials {
+    
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+
+/* ================== CTA ================== */
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* =================== HEADERSKILLS ============== */
+
+.header__skills {
+    height: 60vh;
+    width: 30vw;
+    position: absolute;
+    top: 65vh;
+    left: 10vw;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+}
+
+.box {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 100px;
+    left: 490px;
+    transform-style: preserve-3d;
+    animation-name: box;
+    animation-timing-function: ease-in-out;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+
+
+}
+
+/* @keyframes box {
+    from{
+    tranform: rotateY(0deg);
+    }
+    to{
+    transform: rotateY(359deg);
+    }
+} */
+
+@keyframes box {
+    from,
+    to {
+        transform: rotateX(0deg) rotate(0deg) rotate(0deg);
+    }
+    16% {
+        transform: rotateY(-90deg);
+    }
+    33% {
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50% {
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66% {
+        transform: rotateY(-270deg) rotateZ(90deg);
+    }
+    83% {
+        transform: rotateX(90deg);
+    }
+}
+
+
+
+
+#card {
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    background: black;
+    border: 1px solid #ff854d;
+    position: absolute;  
+    display: flex;
+    justify-content: center; 
+    transition: all 1s; 
+}
+
+a {
+   margin: 0 auto; 
+}
+
+.left {
+    right: 50px;
+    transform: rotateY(-90deg)
+}
+.right {
+    left: 50px;
+    transform: rotateY(90deg)
+}
+.top {
+    top: 50px;
+    transform: rotateX(90deg)
+}
+.bottom {
+    bottom: 50px;
+    transform: rotateX(-90deg)
+}
+
+.front {
+    transform: translateZ(-50px) rotateY(180deg);
+}
+
+.back {
+    transform: translateZ(50px);
+}
+
+/* ========================== button for 3D ========================= */
+
+
+input{
+    height: 25px;
+    width: 50px;
+    padding: 1rem auto;
+    background: var(--color-primary);
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    position:absolute;
+    top: 125px;
+    left: 300px;
+    border: 1px solid black;
+}
+
+input:hover{
+    background: transparent;
+    transition: var(--transition);
+}
+
+input:focus~ .box .front{
+    transform: translateZ(90px) rotateY(360deg);
+}
+input:focus~ .box .back{
+    transform: translateZ(-90px) rotateY(360deg);
+}
+input:focus~ .box .left{
+    right: 90px;
+}
+input:focus~ .box .right{
+    left: 90px;
+}
+input:focus~ .box .top{
+    bottom: 90px;
+}
+input:focus~ .box .bottom{
+    top: -90px;
+}
+
+.sw-container {
+    width: 100%;
+    top: 50px;
+    height: 100%;
+    left: 200px;
+    position: absolute;
+    z-index: -1;
+    -webkit-transform:
+            translateY(50px)
+            translateX(-60px)
+            rotate(-20deg);
+
+}
+
+.sw-container-left {
+    width: 100%;
+    top: 50px;
+    height: 100%;
+    right: 400px;
+    position: absolute;
+    z-index: -1;
+    -webkit-transform:
+            translateY(50px)
+            translateX(-60px)
+            rotate(-20deg);
+
+}
+
+/* ================= ANIMATION FOR SHARKWHALE =================== */
+
+/* .sw-container path {
+    fill: transparent;
+    stroke: var(--color-primary);
+    stroke-width: 5;
+    stroke-linejoin: round;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: animate 3s ease-in infinite;
+}
+
+.sw-container path:hover {
+    animation: animate 12s ease-in-out;
+} 
+
+@keyframes animate {
+    0% 
+    {
+        stroke-dashoffset: 0;
+    }
+    40% 
+    {
+        stroke-dashoffset: 100;
+    }
+    80%
+    {
+        stroke-dashoffset: 200;
+        fill: transparent;
+    }
+    100%
+    {
+        stroke-dashoffset: 300;
+        fill: var(--color-primary);
+    }
+}  */
+
+/*  ======================= SCROLL DOWN ================== */
+
+.scroll-down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+
+}
+
+/* =======================  MEDIA QUERIES MEDIUM DEVICES =============================*/
+
+@media screen and (max-width: 1024px) {
+
+    header {
+        height: 100vh;
+    }
+
+    input {
+        /* left: 200px; */
+        left: -18%;
+        top: -16%;
+    }
+
+    .box {
+        /* left: 350px; */
+        /* position: absolute;
+        top: -12%;
+        transform: translate(0, -50%); */
+        position:absolute;
+        top: -22%;
+        left: 50%;
+
+        
+    }
+
+    .header__skills {
+        position: relative;  
+        
+    }
+    
+
+    .header__socials {
+        /* bottom: 27rem; */
+        position: absolute;
+        top: 50%;
+    }
+
+
+
+    .scroll-down {
+        /* bottom: 31rem; */
+        /* position: relative; */
+        /* top: 50%; */
+        bottom: 43%;
+    }
+
+}
+
+/* =======================  MEDIA QUERIES SMALL DEVICES =============================*/
+
+
+@media screen and (max-width: 600px) {
+
+    header {
+        height: 100vh;
+    }
+
+    .header__socials, .scroll-down {
+        display: none;
+    }
+
+    input {
+        display: none;
+    }
+
+    .box {
+        left: 30%;
+        top: -40%;
+    }
+
+}

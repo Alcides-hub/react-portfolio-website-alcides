@@ -1,0 +1,19 @@
+#about {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+
+}
+
+
+.about__me-image {
+    position: absolute;
+    left: 0;
+    top: 45em;
+    height: 100vh;
+    
+}
+.about__me-image svg {
+    height: 100vh;
+    width: 100%;
+}

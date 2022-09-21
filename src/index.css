@@ -58,10 +58,16 @@ section {
     margin-top: 8rem;
 }
 
-section > h2 {
+section > h2  {
+    text-align: center;
+    color: var(--color-texty);
+    margin-bottom: 3rem;
+}
+
+section > h5  {
     text-align: center;
     color: var(--color-primary);
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .text-light {

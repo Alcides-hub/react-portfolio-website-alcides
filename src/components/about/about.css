@@ -2,18 +2,131 @@
     height: 100vh;
     padding-top: 7rem;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: top; */
+}
 
+h5 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.text {
+    z-index: 1;
+}
+
+.about__me {
+    opacity: 0;
 }
 
 
 .about__me-image {
     position: absolute;
     left: 0;
-    top: 45em;
+    top: 50em;
     height: 100vh;
+    stroke: #00C9B2;
+    stroke-width: 10px;
+    
     
 }
 .about__me-image svg {
     height: 100vh;
     width: 100%;
 }
+
+.about__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.about__cards {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.about__card {
+    /* background: var(--color-primary); */
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.about__card:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+    color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.about__icon {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.about__card h5 {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    font-weight: 400;
+}
+
+.about__card small {
+    font-size: 0.7rem;
+}
+
+.about__content p {
+    margin: 1rem 0 2.6rem;
+    color: var(--color-text);
+    font-size: 0.8rem;
+}
+
+.about__content a {
+    margin-top: -1rem;
+    background: transparent;
+    color: var(--color-text);
+}
+
+/* =======================  MEDIA QUERIES MEDIUM DEVICES =============================*/
+
+@media screen and (max-width: 1024px) {
+    .about__container {
+    grid-template-columns: 1fr;
+}
+    .about__me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+}
+    .about__me-image {
+        stroke: none;
+        z-index: -1;
+        justify-content: center;
+        top: 67rem;
+    }
+
+    .about__cards  {
+        margin-top: 0rem;
+    }
+}
+
+/* =======================  MEDIA QUERIES SMALL DEVICES =============================*/
+
+
+@media screen and (max-width: 600px) {
+    .about__me {
+        width: 65%;
+        margin: 0 auto 2rem;
+    }
+    .about__content {
+        text-align: center;
+    }
+    
+}
+

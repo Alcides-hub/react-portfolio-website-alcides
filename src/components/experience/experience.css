@@ -1,0 +1,91 @@
+.container__skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container__skills > div {
+    background: var(--color-bg-variant);
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.container__skills > div:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+    color: var(--color-primary-variant);
+    cursor: default;
+}
+
+#experience {
+    padding-top: 6rem;
+}
+
+#experience .container {
+    width: 80%;
+}
+
+h3 {
+    text-align: center;
+    color: var(--color-primary)
+}
+
+.experience__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+}
+
+.experience__details > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.experience-icon {
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: var(--color-primary);
+}
+
+h4 {
+    text-align: center;
+}
+
+/* =======================  MEDIA QUERIES MEDIUM DEVICES =============================*/
+
+@media screen and (max-width: 1024px) {
+    .container__skills {
+        grid-template-columns: 1fr;
+    }
+    .container__skills > div {
+        width: 80%;
+        padding: 4rem;
+        margin: 1rem auto;
+    }
+}
+
+/* =======================  MEDIA QUERIES SMALL DEVICES =============================*/
+
+
+@media screen and (max-width: 600px) {
+    .container__skills {
+        gap: 1rem;
+    }
+    .container__skills > div {
+        width: 90%;
+        padding: 2rem 1rem;
+        margin: 0rem;
+    }
+    #experience .container {
+        width: 90%;
+    }
+    .experience__content {
+        /* width: 90%; */
+        justify-content: center;
+    }
+}

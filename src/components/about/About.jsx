@@ -1,21 +1,46 @@
 import React from 'react'
 import './about.css'
+import { useEffect, useRef } from 'react';
+import DrawSVGPlugin from 'gsap-trial/dist/DrawSVGPlugin';
+import gsap from 'gsap-trial'
+import {BsBook} from 'react-icons/bs'
 
 const About = () => {
+
+  const bgRef = useRef();
+  const outlineImageRef = useRef();
+
+  useEffect(() => {
+    gsap.registerPlugin(DrawSVGPlugin)
+
+    gsap.timeline()
+    .to(bgRef.current, {
+        duration: 1,
+        opacity: 1,
+    })
+    .from(outlineImageRef.current, {
+      drawSVG: 0,
+      duration: 50,
+      delay: 10,
+    })
+  }, [])
+
   return (
     <section id="about">
+    <div className='text'>
     <h5>Get to know</h5>
     <h2>About Me</h2>
-
+    </div>
     <div className="container about__container">
-    <div className='about__me'>
-      <div className='about__me-image'>
+      <div className='about__me' ref={bgRef}>
+        <div className='about__me-image'>
           <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
             width="779.000000pt" height="1024.000000pt" viewBox="0 0 779.000000 1024.000000"
             preserveAspectRatio="xMidYMid meet">
             <g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)"
-            fill="#000000" stroke="none">
-            <path d="M1717 9983 c-27 -8 -46 -17 -43 -20 9 -10 113 8 132 22 18 13 17 14
+            fill="#000000" >
+            <path ref={outlineImageRef} 
+            d="M1717 9983 c-27 -8 -46 -17 -43 -20 9 -10 113 8 132 22 18 13 17 14
             -11 14 -16 -1 -52 -8 -78 -16z"/>
             <path d="M2142 9903 c-12 -2 -20 -9 -17 -14 8 -12 66 -11 85 1 13 8 13 10 -2
             10 -9 0 -22 2 -30 4 -7 2 -23 1 -36 -1z"/>
@@ -463,12 +488,26 @@ const About = () => {
             <path d="M5456 141 c-4 -7 -5 -15 -2 -18 9 -9 19 4 14 18 -4 11 -6 11 -12 0z"/>
             </g>
           </svg>
+        </div>
       </div>
-    </div>
-    <div className='about__contente'>
-
-    </div>
-
+      <div className='about__content'>
+        <div className="about__cards">
+          <article className='about__card'>
+            <BsBook className='about__icon'/>
+            <h5>Education</h5>
+            <small>2 years studying code</small>
+          </article>
+          <article className='about__card'>
+            <BsBook className='about__icon'/>
+            <h5>Projects</h5>
+            <small>40+ projects completed</small>
+          </article>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nesciunt, eveniet vel quibusdam porro ad, 
+          laboriosam officiis mollitia sint explicabo dolorum assumenda incidunt magnam. 
+          Eum reprehenderit illo omnis delectus id!</p>
+        <a href="#contact" className="btn btn-primary">Let's Talk</a>
+      </div>
     </div>  
     
     </section>

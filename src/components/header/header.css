@@ -260,6 +260,9 @@ input:focus~ .box .bottom{
     header {
         height: 100vh;
     }
+    .container {
+        width: 80%;
+    }
 
     input {
         /* left: 200px; */
@@ -297,7 +300,7 @@ input:focus~ .box .bottom{
         /* bottom: 31rem; */
         /* position: relative; */
         /* top: 50%; */
-        bottom: 43%;
+        bottom: 38%;
     }
 
 }

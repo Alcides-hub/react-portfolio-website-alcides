@@ -1,0 +1,29 @@
+.fade-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.fade-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.image-holder image img {
+    width: 212px;
+    height: 119px;
+    border-radius: 8px;
+}
+
+.project-container {
+    margin: 15px auto 15px 0;
+}
+
+.project-container > .title {
+    padding: 10px 0 10px 0;
+}

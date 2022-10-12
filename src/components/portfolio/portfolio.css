@@ -6,7 +6,7 @@
     background-color: var(--color-bg);
     color: #333;
     font-size: 16px;
-    margin-top: 0;
+    padding-top: 5rem;
 }
 
 .view-repos {

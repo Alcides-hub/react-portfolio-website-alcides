@@ -2,7 +2,7 @@
     padding-top: 6rem;
 }
 
-.fade-left {
+.sliders {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,12 +10,29 @@
     width: 100%;
 }
 
+.fade-left {
+
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.fade-left-appear {
+    
+    transition: transform 500ms ease-in;
+    transform: translateX(0%);
+    opacity: 1;
+}
+
 .fade-right {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
+    transform: translateX(50%);
+    opacity: 0;
+}
+
+.fade-right-appear {
+    
+    transition: transform 500ms ease-in;
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .image-holder image img {

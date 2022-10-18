@@ -17,7 +17,6 @@ const Footer = () => {
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#project">Project</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#">Home</a></li>
       </ul>
       <div className='footer__socials'>
       <a href="https://www.instagram.com"><FiInstagram/></a>
@@ -25,6 +24,9 @@ const Footer = () => {
       <a href="https://www.linkedin.com"><AiOutlineLinkedin/></a>
       <a href="https://www.dribbble.com"><FiDribbble/></a>
       <a href="https://www.github.com"><BsGithub/></a>
+      </div>
+      <div className='footer__copyright'>
+        <small>&copy; BOOMG portfolio. All rights reserved</small>
       </div>
     </footer>
   )

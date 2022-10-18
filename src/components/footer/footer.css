@@ -33,3 +33,19 @@ footer a {
     margin-bottom: 4rem;
     margin: auto;
 }
+
+.footer__copyright {
+    margin: 2rem;
+}
+
+/* ======================= MEDIA QUERY (SMALL DEVICE) ================== */
+
+@media screen and (max-width: 600px) {
+    .permalinks {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .footer__socials {
+        margin-bottom: 2rem;
+    }
+}

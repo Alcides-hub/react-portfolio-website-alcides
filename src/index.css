@@ -98,11 +98,11 @@ a:hover {
     transition: var(--transition);
 }
 
-/* .btn:hover {
+.btn:hover {
     background: var(--color-primary);
     color: var(--color-text);
     border-color: transparent;
-} */
+}
 
 .btn-primary {
     background: var(--color-primary);

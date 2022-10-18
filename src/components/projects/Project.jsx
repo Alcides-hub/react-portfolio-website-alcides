@@ -63,114 +63,113 @@ export default function Project() {
 }
 {myElementIsVisible ? (
             <article ref={myRef}  aria-label="in view" className='sliders'>   
+                <div className='project-container fade-right-appear'>
+                <span className='title'>Name Tag Generator</span><br></br>
+                <span className='project-item'>SkillCrush Project</span><br></br>
+                <span className='project-text'>This project is a name tag generator that was created using React.js, HTML5, and CSS3. Interactive name tag generator app using React.js, receives user input by generating a new name tag. In this project, we made components to create new name tags with user input and to remove the tag names. We also used lifecycle methods to make sure the user data is saved across different sessions of the app.</span>
+                </div> 
                 <div className="image-holder fade-left-appear">
                     <image>
                         <img src={picture2} alt="Name Tag Genrator"/>
                     </image>
                 </div>
-                <div className='project-container fade-right-appear'>
-                <span className='title'>Name Tag Generator</span><br></br>
-                <span className='project-item'>SkillCrush Project</span><br></br>
-                <span className='project-text'>This project is a name tag generator that was created using React.js, HTML5, and CSS3. Interactive name tag generator app using React.js, receives user input by generating a new name tag. In this project, we made components to create new name tags with user input and to remove the tag names. We also used lifecycle methods to make sure the user data is saved across different sessions of the app.</span>
-                </div> 
             </article>
 
             ) : (
                 <article  aria-label="in view" className="sliders">   
+                <div className='project-container fade-right'>
+                <span className='title'>Name Tag Generator</span><br></br>
+                <span className='project-item'>SkillCrush Project</span><br></br>
+                <span className='project-text'>This project is a name tag generator that was created using React.js, HTML5, and CSS3. Interactive name tag generator app using React.js, receives user input by generating a new name tag. In this project, we made components to create new name tags with user input and to remove the tag names. We also used lifecycle methods to make sure the user data is saved across different sessions of the app.</span>
+                </div> 
                 <div className="image-holder fade-left">
                     <image>
                         <img src={picture2} alt="Name Tag Generator"/>
                     </image>
                 </div>
-                <div className='project-container fade-right'>
-                <span className='title'>Name Tag Generator</span><br></br>
-                <span className='project-item'>SkillCrush Project</span><br></br>
-                <span className='project-text'>This project is a name tag generator that was created using React.js, HTML5, and CSS3. Interactive name tag generator app using React.js, receives user input by generating a new name tag. In this project, we made components to create new name tags with user input and to remove the tag names. We also used lifecycle methods to make sure the user data is saved across different sessions of the app.</span>
-                </div> 
             </article>
             )
 }
                 {myElementIsVisible ? (
                 <article   aria-label="in view" className='sliders'>   
-                <div className='project-container fade-right-appear'>
-                <span className='title'>Guess The Word Game</span><br></br>
-                <span className='project-item'>SkillCrush Project</span><br></br>
-                <span className='project-text'>Players guess the word by entering one letter at a time. If the player guesses all the letters correctly before they use up their allotted guesses, they win!</span>
-                </div>
                 <div className="image-holder fade-left-appear">
                     <image>
                         <img src={picture3} alt="Notes-Taking_Ui"/>
                     </image>
                 </div>
-            </article>
-                ) : (
-                <article   aria-label="in view" className='sliders'>   
-                
-                <div className='project-container fade-right'>
+                <div className='project-container fade-right-appear'>
                 <span className='title'>Guess The Word Game</span><br></br>
                 <span className='project-item'>SkillCrush Project</span><br></br>
                 <span className='project-text'>Players guess the word by entering one letter at a time. If the player guesses all the letters correctly before they use up their allotted guesses, they win!</span>
                 </div>
+            </article>
+                ) : (
+                <article   aria-label="in view" className='sliders'>   
                 <div className="image-holder fade-left">
                     <image>
                         <img src={picture3} alt="Notes-Taking_Ui"/>
                     </image>
+                </div>
+                <div className='project-container fade-right'>
+                <span className='title'>Guess The Word Game</span><br></br>
+                <span className='project-item'>SkillCrush Project</span><br></br>
+                <span className='project-text'>Players guess the word by entering one letter at a time. If the player guesses all the letters correctly before they use up their allotted guesses, they win!</span>
                 </div>
             </article>
                 )
 }
             {myElementIsVisible ? (
             <article   aria-label="in view" className='sliders'>   
-                <div className="image-holder fade-left-appear">
-                    <image>
-                        <img src={picture4} alt="Notes-Taking_Ui"/>
-                    </image>
-                </div>
                 <div className='project-container fade-right-appear'>
                 <span className='title'>Unplugged Website</span><br></br>
                 <span className='project-item'>SkillCrush Project</span><br></br>
                 <span className='project-text'>A multi-page responsive website coded with Flexbox. This versatile design has several sections, including a Cards design pattern, that can be repurposed for different sites.</span>
                 </div>
-            </article>
-            ) : (
-                <article   aria-label="in view" className='sliders'>   
-                <div className="image-holder fade-left">
+                <div className="image-holder fade-left-appear">
                     <image>
                         <img src={picture4} alt="Notes-Taking_Ui"/>
                     </image>
                 </div>
+            </article>
+            ) : (
+                <article   aria-label="in view" className='sliders'>   
                 <div className='project-container fade-right'>
                 <span className='title'>Unplugged Website</span><br></br>
                 <span className='project-item'>SkillCrush Project</span><br></br>
                 <span className='project-text'>A multi-page responsive website coded with Flexbox. This versatile design has several sections, including a Cards design pattern, that can be repurposed for different sites.</span>
+                </div>
+                <div className="image-holder fade-left">
+                    <image>
+                        <img src={picture4} alt="Notes-Taking_Ui"/>
+                    </image>
                 </div>
             </article>  
             )
 }
             {myElementIsVisible ? (
             <article   aria-label="in view" className='sliders'>   
-                <div className='project-container fade-right-appear'>
-                <span className='title'>Rogue Pickings Website</span><br></br>
-                <span className='project-item'>SkillCrush Project</span><br></br>
-                <span className='project-text'>A simple home page perfect for a pop-up restaurant or food truck. Originally a static website, I converted it into a responsive design using Flexbox.</span>
-                </div>
                 <div className="image-holder fade-left-appear">
                     <image>
                         <img src={picture5} alt="Notes-Taking_Ui"/>
                     </image>
                 </div>
-            </article>
-            ) : (
-                <article   aria-label="in view" className='sliders'>   
-                <div className='project-container fade-right'>
+                <div className='project-container fade-right-appear'>
                 <span className='title'>Rogue Pickings Website</span><br></br>
                 <span className='project-item'>SkillCrush Project</span><br></br>
                 <span className='project-text'>A simple home page perfect for a pop-up restaurant or food truck. Originally a static website, I converted it into a responsive design using Flexbox.</span>
                 </div>
+            </article>
+            ) : (
+                <article   aria-label="in view" className='sliders'>   
                 <div className="image-holder fade-left">
                     <image>
                         <img src={picture5} alt="Notes-Taking_Ui"/>
                     </image>
+                </div>
+                <div className='project-container fade-right'>
+                <span className='title'>Rogue Pickings Website</span><br></br>
+                <span className='project-item'>SkillCrush Project</span><br></br>
+                <span className='project-text'>A simple home page perfect for a pop-up restaurant or food truck. Originally a static website, I converted it into a responsive design using Flexbox.</span>
                 </div>
             </article> 
 )

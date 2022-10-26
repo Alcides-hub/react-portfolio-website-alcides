@@ -75,9 +75,11 @@ const Portfolio = () => {
               </div>
             </section>
             <section class="repos">
-              <input 
-              type="text" 
-              class="filter-repos hide" 
+            <input 
+              type="text"
+              id="repoName"
+              name="repository"
+              className="filter-repos" 
               placeholder="Search repo"
               value={query}
               onChange={handleQueryInput} />

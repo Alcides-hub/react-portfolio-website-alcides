@@ -216,7 +216,7 @@ input:focus~ .box .bottom{
     stroke-linejoin: round;
     stroke-dasharray: 100;
     stroke-dashoffset: 100;
-    animation: animate 3s ease-in infinite;
+    animation: animate 5s ease-in infinite;
 }
 
 .sw-container path:hover {
